@@ -74,6 +74,11 @@ svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon
 rm -rf .svn
 ####################################################################################################
 
+# Theme-infinityfreedom
+svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./luci-theme-infinityfreedom
+rm -rf .svn
+####################################################################################################
+
 # IPTV
 svn co https://github.com/riverscn/openwrt-iptvhelper/trunk ./
 rm -rf .svn
