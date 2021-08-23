@@ -142,6 +142,7 @@ rm -rf .svn
 # Lede/Lean
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 rm -rf ./autosamba
+rm -rf ./default-settings
 rm -rf .svn
 ####################################################################################################
 
