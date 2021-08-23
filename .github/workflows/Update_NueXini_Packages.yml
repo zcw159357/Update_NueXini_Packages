@@ -4,7 +4,7 @@ on:
   repository_dispatch:
   workflow_dispatch:
   schedule:
-    - cron:  '0 8,2,4,6 * * *'
+    - cron:  '0 2,8,14,20 * * *'
 
 env:
   TZ: Asia/Shanghai
