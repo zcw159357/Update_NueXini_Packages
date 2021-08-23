@@ -48,6 +48,26 @@ svn co https://github.com/pymumu/luci-app-smartdns/branches/lede ./luci-app-smar
 rm -rf .svn
 ####################################################################################################
 
+# dockerman
+svn co https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-dockerman ./luci-app-dockerman
+rm -rf .svn
+####################################################################################################
+
+# udp2raw
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw ./luci-app-udp2raw
+rm -rf .svn
+####################################################################################################
+
+# ttnode(甜糖星愿自动采集插件)
+svn co https://github.com/jerrykuku/luci-app-ttnode/trunk/ttnode/luci-app-ttnode ./luci-app-ttnode
+rm -rf .svn
+####################################################################################################
+
+# autotimeset(定时设置)
+https://github.com/sirpdboy/luci-app-autotimeset/trunk ./luci-app-autotimeset
+rm -rf .svn
+####################################################################################################
+
 # Theme-Argon
 svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 ./luci-theme-argon
 svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon-config
