@@ -3,7 +3,7 @@
 ####################################################################################################
 
 # Adguardhome
-svn co https://github.com/coolsnowwolf/packages/trunk/net/adguardhome ./adguardhome
+svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome ./adguardhome
 rm -rf .svn
 svn co https://github.com/rufengsuixing/luci-app-adguardhome/trunk ./luci-app-adguardhome
 rm -rf .svn
@@ -54,6 +54,7 @@ rm -rf .svn
 ####################################################################################################
 
 # udp2raw
+svn co https://github.com/immortalwrt/packages/trunk/net/udp2raw-tunnel ./udp2raw-tunnel
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw ./luci-app-udp2raw
 rm -rf .svn
 ####################################################################################################
