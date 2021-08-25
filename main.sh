@@ -59,6 +59,15 @@ svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw .
 rm -rf .svn
 ####################################################################################################
 
+# ksmbd
+svn co https://github.com/immortalwrt/packages/trunk/net/ksmbd-tools ./ksmbd-tools
+rm -rf .svn
+svn co https://github.com/immortalwrt/packages/trunk/kernel/ksmbd ./ksmbd
+rm -rf .svn
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-ksmbd ./luci-app-ksmbd
+rm -rf .svn
+####################################################################################################
+
 # ttnode(甜糖星愿自动采集插件)
 svn co https://github.com/jerrykuku/luci-app-ttnode/trunk/ttnode/luci-app-ttnode ./luci-app-ttnode
 rm -rf .svn
