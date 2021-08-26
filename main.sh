@@ -5,7 +5,7 @@
 # Adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome ./adguardhome
 rm -rf .svn
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome ./luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ./luci-app-adguardhome
 rm -rf .svn
 ####################################################################################################
 
@@ -80,6 +80,13 @@ rm -rf .svn
 
 # CPU睿频设置
 svn co https://github.com/DevOpenWRT-Router/luci-app-cpulimit/trunk ./luci-app-cpulimit
+rm -rf .svn
+####################################################################################################
+
+# Gost代理
+https://github.com/immortalwrt/packages/trunk/net/gost ./gost
+rm -rf .svn
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost /luci-app-gost
 rm -rf .svn
 ####################################################################################################
 
