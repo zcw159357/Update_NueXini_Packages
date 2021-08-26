@@ -74,7 +74,12 @@ rm -rf .svn
 ####################################################################################################
 
 # autotimeset(定时设置)
-https://github.com/sirpdboy/luci-app-autotimeset/trunk ./luci-app-autotimeset
+svn co https://github.com/sirpdboy/luci-app-autotimeset/trunk ./luci-app-autotimeset
+rm -rf .svn
+####################################################################################################
+
+# CPU睿频设置
+svn co https://github.com/DevOpenWRT-Router/luci-app-cpulimit/trunk ./luci-app-cpulimit
 rm -rf .svn
 ####################################################################################################
 
