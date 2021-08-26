@@ -151,6 +151,11 @@ svn co https://github.com/koshev-msk/luci-app-modeminfo/trunk ./luci-app-modemin
 rm -rf .svn
 ####################################################################################################
 
+# airwhu 锐捷
+svn co https://github.com/KyleRicardo/luci-app-airwhu/trunk ./luci-app-airwhu
+rm -rf .svn
+####################################################################################################
+
 # Control-weburl
 svn co https://github.com/gdck/luci-app-control-weburl/trunk ./luci-app-control-weburl
 rm -rf .svn
