@@ -5,7 +5,7 @@
 # Adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome ./adguardhome
 rm -rf .svn
-svn co https://github.com/rufengsuixing/luci-app-adguardhome/trunk ./luci-app-adguardhome
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome ./luci-app-adguardhome
 rm -rf .svn
 ####################################################################################################
 
