@@ -101,6 +101,12 @@ svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci
 rm -rf .svn
 ####################################################################################################
 
+
+# luci-theme-rosy(for 18.06)
+svn co https://github.com/rosywrt/luci-theme-rosy/trunk ./luci-theme-rosy
+rm -rf .svn
+####################################################################################################
+
 # IPTV
 svn co https://github.com/riverscn/openwrt-iptvhelper/trunk ./
 rm -rf .svn
