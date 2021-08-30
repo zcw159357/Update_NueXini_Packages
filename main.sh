@@ -178,6 +178,9 @@ rm -rf .svn
 rm -rf ./autosamba
 rm -rf ./default-settings
 rm -rf ./libcryptopp
+rm -rf ./shortcut-fe
+rm -rf ./luci-app-turboacc
+
 
 svn co https://github.com/immortalwrt/packages/trunk/libs/libcryptopp ./libcryptopp
 rm -rf .svn
