@@ -174,10 +174,12 @@ rm -rf .svn
 
 # Lede/Lean
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
+rm -rf .svn
+rm -rf ./shortcut-fe
 rm -rf ./autosamba
 rm -rf ./default-settings
 rm -rf ./libcryptopp
-rm -rf .svn
+
 svn co https://github.com/immortalwrt/packages/trunk/libs/libcryptopp ./libcryptopp
 rm -rf .svn
 ####################################################################################################
