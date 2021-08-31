@@ -21,6 +21,7 @@ rm -rf .svn
 
 # PassWall
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk ./
+sed -i 's/default y/default n/g' luci-app-passwall/Makefile
 rm -rf .svn
 ####################################################################################################
 
