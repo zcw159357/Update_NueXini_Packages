@@ -102,6 +102,20 @@ svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci
 rm -rf .svn
 ####################################################################################################
 
+# Theme-material
+svn co https://github.com/LuttyYang/luci-theme-material/trunk ./luci-theme-material
+rm -rf .svn
+####################################################################################################
+
+# Theme-amaterial
+svn co https://github.com/openwrt-develop/luci-theme-atmaterial/trunk ./luci-theme-amaterial
+rm -rf .svn
+####################################################################################################
+
+# Theme-darkmatter
+svn co https://github.com/apollo-ng/luci-theme-darkmatter/trunk ./luci-theme-darkmatter
+rm -rf .svn
+####################################################################################################
 
 # luci-theme-rosy(for 18.06)
 svn co https://github.com/rosywrt/luci-theme-rosy/trunk ./luci-theme-rosy
