@@ -197,7 +197,7 @@ rm -rf ./shortcut-fe
 rm -rf ./luci-app-turboacc
 
 
-svn co https://github.com/immortalwrt/packages/trunk/libs/libcryptopp ./libcryptopp
+svn co https://github.com/NueXini/Update_NueXini_Packages/trunk/other/libcryptopp ./libcryptopp
 rm -rf .svn
 ####################################################################################################
 
