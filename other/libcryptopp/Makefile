@@ -1,20 +1,13 @@
-#
-# Copyright (C) 2021 ImmortalWrt
-# <https://immortalwrt.org>
-#
-# This is free software, licensed under the GNU General Public License v3.
-# See /LICENSE for more information.
-#
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libcryptopp
-PKG_VERSION:=8_3_0
+PKG_VERSION:=8.5.0
 PKG_RELEASE:=2
 
-PKG_SOURCE:=cryptopp-CRYPTOPP_$(PKG_VERSION).zip
+PKG_SOURCE:=cryptopp$(subst .,,$(PKG_VERSION)).zip
 PKG_SOURCE_URL:=https://github.com/NueXini/Update_NueXini_Packages/raw/master/other/
-PKG_HASH:=824ff7ff1ce963788ec924992431832aaa6454e4e731e29e5307cb91a3bd7cb9
+PKG_HASH:=95fc50d59488ebf61a735cce2b2ec2c2561fc682077c7b496273d65a1ed93d9e
 
 PKG_FIXUP:=autoreconf
 PKG_BUILD_PARALLEL:=1
