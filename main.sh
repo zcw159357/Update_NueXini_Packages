@@ -27,6 +27,7 @@ rm -rf .svn
 
 # SSR-Plus
 svn co https://github.com/fw876/helloworld/trunk ./
+sed -i 's#libustream-openssl#libustream-mbedtls#g' ./luci-app-ssr-plus/Makefile
 rm -rf .svn
 ####################################################################################################
 
@@ -195,6 +196,7 @@ rm -rf ./default-settings
 rm -rf ./libcryptopp
 rm -rf ./shortcut-fe
 rm -rf ./luci-app-turboacc
+sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
 
 
 svn co https://github.com/NueXini/Update_NueXini_Packages/trunk/other/libcryptopp ./libcryptopp
