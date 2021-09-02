@@ -193,7 +193,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 rm -rf .svn
 rm -rf ./autosamba
 rm -rf ./default-settings
-rm -rf ./libcryptopp
+#rm -rf ./libcryptopp
 rm -rf ./shortcut-fe
 rm -rf ./luci-app-turboacc
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
