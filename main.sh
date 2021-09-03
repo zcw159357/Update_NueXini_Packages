@@ -194,16 +194,8 @@ rm -rf .svn
 rm -rf ./autosamba
 rm -rf ./default-settings
 
-#rm -rf ./libcryptopp
 sed -i 's#http://www.cryptopp.com/#https://github.com/NueXini/Update_NueXini_Packages/raw/master/other/#g' ./libcryptopp/Makefile
-
-#rm -rf ./shortcut-fe
-#rm -rf ./luci-app-turboacc
-
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
-
-#svn co https://github.com/NueXini/Update_NueXini_Packages/trunk/other/libcryptopp ./libcryptopp
-#rm -rf .svn
 ####################################################################################################
 
 ####################################################################################################
