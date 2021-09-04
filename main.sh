@@ -196,6 +196,8 @@ rm -rf ./default-settings
 
 sed -i 's#http://www.cryptopp.com/#https://github.com/NueXini/Update_NueXini_Packages/raw/master/other/#g' ./libcryptopp/Makefile
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
+sed -i 's/default y/default n/g' ./luci-app-diskman/Makefile
+sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
 ####################################################################################################
 
 ####################################################################################################
