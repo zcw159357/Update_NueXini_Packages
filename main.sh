@@ -80,7 +80,7 @@ rm -rf .svn
 
 # Gost代理
 svn co https://github.com/immortalwrt/packages/trunk/net/gost ./gost
-svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-gost /luci-app-gost
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost ./luci-app-gost
 rm -rf .svn
 ####################################################################################################
 
