@@ -119,7 +119,7 @@ rm -rf .svn
 ####################################################################################################
 
 # luci-theme-rosy(for 18.06)
-svn co https://github.com/rosywrt/luci-theme-rosy/trunk ./luci-theme-rosy
+svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy ./luci-theme-rosy
 rm -rf .svn
 ####################################################################################################
 
