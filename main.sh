@@ -66,7 +66,7 @@ rm -rf .svn
 ####################################################################################################
 
 # ttnode(甜糖星愿自动采集插件)
-svn co https://github.com/jerrykuku/luci-app-ttnode/trunk/ttnode/luci-app-ttnode ./luci-app-ttnode
+svn co https://github.com/jerrykuku/luci-app-ttnode/trunk ./luci-app-ttnode
 rm -rf .svn
 ####################################################################################################
 
