@@ -3,8 +3,6 @@
 ####################################################################################################
 
 # Adguardhome
-svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome ./adguardhome
-rm -rf .svn
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ./luci-app-adguardhome
 rm -rf .svn
 ####################################################################################################
@@ -37,15 +35,12 @@ rm -rf .svn
 ####################################################################################################
 
 # VSSR
-svn co https://github.com/jerrykuku/luci-app-vssr/trunk ./luci-app-vssr
-rm -rf .svn
 svn co https://github.com/jerrykuku/lua-maxminddb/trunk ./lua-maxminddb
+svn co https://github.com/jerrykuku/luci-app-vssr/trunk ./luci-app-vssr
 rm -rf .svn
 ####################################################################################################
 
 # Smartdns
-svn co https://github.com/immortalwrt/packages/trunk/net/smartdns ./smartdns
-rm -rf .svn
 svn co https://github.com/pymumu/luci-app-smartdns/branches/lede ./luci-app-smartdns
 rm -rf .svn
 ####################################################################################################
