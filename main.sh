@@ -193,6 +193,10 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 rm -rf .svn
 rm -rf ./autosamba
 rm -rf ./default-settings
+rm -rf ./luci-app-cshark
+
+svn co https://github.com/openwrt/luci/trunk/applications/luci-app-cshark ./luci-app-cshark
+rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://github.com/NueXini/Update_NueXini_Packages/raw/master/other/#g' ./libcryptopp/Makefile
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
@@ -200,7 +204,38 @@ sed -i 's/default y/default n/g' ./luci-app-diskman/Makefile
 sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
 ####################################################################################################
 
+# OpenWrt
+svn co https://github.com/openwrt/luci/trunk/applications/luci-app-banip ./luci-app-banip
+rm -rf .svn
+svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-switch ./luci-app-ledtrig-switch
+rm -rf .svn
+svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-rssi ./luci-app-ledtrig-rssi
+rm -rf .svn
+svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-usbport ./luci-app-ledtrig-usbport
+rm -rf .svn
+svn co https://github.com/openwrt/luci/trunk/applications/luci-app-vnstat2 ./luci-app-vnstat2
+rm -rf .svn
+svn co https://github.com/openwrt/luci/trunk/themes/luci-theme-openwrt-2020 ./luci-theme-openwrt-2020
+rm -rf .svn
 ####################################################################################################
+
+# Lienol
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-fileassistant ./luci-app-fileassistant
+rm -rf .svn
+
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser ./luci-app-filebrowser
+rm -rf .svn
+
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-control-timewol ./luci-app-control-timewol
+rm -rf .svn
+
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-control-webrestriction ./luci-app-control-webrestriction
+rm -rf .svn
+
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-timecontrol ./luci-app-timecontrol
+rm -rf .svn
+####################################################################################################
+
 rm -rf ./*/.git
 rm -rf ./*/.svn 
 rm -rf .gitattributes .gitignore
