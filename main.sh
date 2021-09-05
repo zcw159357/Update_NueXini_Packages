@@ -93,52 +93,42 @@ rm -rf .svn
 ####################################################################################################
 
 # Theme-Argon
-svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 ./luci-theme-argon
+svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon1907
+svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 ./luci-theme-argon1806
 svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon-config
 rm -rf .svn
 ####################################################################################################
 
+# Theme-Rosy
+svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy ./luci-theme-rosy1806
+rm -rf .svn
+####################################################################################################
+
 # Theme-infinityfreedom
-svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./luci-theme-infinityfreedom
+svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./luci-theme-infinityfreedom1806
 rm -rf .svn
 ####################################################################################################
 
-# Theme-material
-svn co https://github.com/LuttyYang/luci-theme-material/trunk ./luci-theme-material
+# Theme-openwrt-2020
+svn co https://github.com/openwrt/luci/trunk/themes/luci-theme-openwrt-2020 ./luci-theme-openwrt-2020
 rm -rf .svn
 ####################################################################################################
 
-# Theme-amaterial
-svn co https://github.com/openwrt-develop/luci-theme-atmaterial/trunk ./luci-theme-amaterial
-rm -rf .svn
-####################################################################################################
-
-# Theme-darkmatter
-svn co https://github.com/apollo-ng/luci-theme-darkmatter/trunk ./luci-theme-darkmatter
-rm -rf .svn
-####################################################################################################
-
-# Theme-darkmatter
-svn co https://github.com/apollo-ng/luci-theme-darkmatter/trunk ./luci-theme-darkmatter
-rm -rf .svn
-####################################################################################################
-
-# luci-theme-edge(for 19.07)
-svn co https://github.com/kiddin9/luci-theme-edge/trunk ./luci-theme-edge
+# Theme-Edge
+svn co https://github.com/kiddin9/luci-theme-edge/trunk ./luci-theme-edge1907
+svn co https://github.com/kiddin9/luci-theme-edge/branches/18.06 ./luci-theme-edge1806
 rm -rf .svn
 ####################################################################################################
 
 # IPTV
 svn co https://github.com/riverscn/openwrt-iptvhelper/trunk ./
-rm -rf .svn
 svn co https://github.com/riverscn/luci-app-omcproxy/trunk ./luci-app-omcproxy
 rm -rf .svn
 ####################################################################################################
 
 # luci-app-jd-dailybonus
-svn co https://github.com/jerrykuku/luci-app-jd-dailybonus/trunk ./luci-app-jd-dailybonus
-rm -rf .svn
 svn co https://github.com/jerrykuku/node-request/trunk ./node-request
+svn co https://github.com/jerrykuku/luci-app-jd-dailybonus/trunk ./luci-app-jd-dailybonus
 rm -rf .svn
 ####################################################################################################
 
@@ -219,8 +209,6 @@ rm -rf .svn
 svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-usbport ./luci-app-ledtrig-usbport
 rm -rf .svn
 svn co https://github.com/openwrt/luci/trunk/applications/luci-app-vnstat2 ./luci-app-vnstat2
-rm -rf .svn
-svn co https://github.com/openwrt/luci/trunk/themes/luci-theme-openwrt-2020 ./luci-theme-openwrt-2020
 rm -rf .svn
 ####################################################################################################
 
