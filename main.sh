@@ -118,8 +118,13 @@ svn co https://github.com/apollo-ng/luci-theme-darkmatter/trunk ./luci-theme-dar
 rm -rf .svn
 ####################################################################################################
 
-# luci-theme-rosy(for 18.06)
-svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy ./luci-theme-rosy
+# Theme-darkmatter
+svn co https://github.com/apollo-ng/luci-theme-darkmatter/trunk ./luci-theme-darkmatter
+rm -rf .svn
+####################################################################################################
+
+# luci-theme-edge(for 19.07)
+svn co https://github.com/kiddin9/luci-theme-edge/trunk ./luci-theme-edge
 rm -rf .svn
 ####################################################################################################
 
