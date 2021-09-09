@@ -3,7 +3,7 @@
 ####################################################################################################
 
 # BanAD
-#svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ./luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ./luci-app-adguardhome
 svn co https://github.com/project-lede/luci-app-godproxy/trunk ./luci-app-godproxy
 svn co https://github.com/small-5/luci-app-adblock-plus/trunk ./luci-app-adblock-plus
 rm -rf .svn
