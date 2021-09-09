@@ -32,11 +32,11 @@ jobs:
     - name: Clone packages
       run: |
         chmod +x $shell
-        mkdir -p nuexini
+        mkdir -p packages
         cd packages
         $GITHUB_WORKSPACE/$shell
 
-    - name: Upload
+    - name: Upload packages
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
