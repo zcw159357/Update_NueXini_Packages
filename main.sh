@@ -159,10 +159,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 rm -rf .svn
 rm -rf ./autosamba
 rm -rf ./default-settings
-rm -rf ./luci-app-cshark
-
-svn co https://github.com/openwrt/luci/trunk/applications/luci-app-cshark ./luci-app-cshark
-rm -rf .svn
+rm -rf ./luci-app-ssrserver-python
 
 sed -i 's#http://www.cryptopp.com/#https://github.com/NueXini/Update_NueXini_Packages/raw/master/other/#g' ./libcryptopp/Makefile
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
