@@ -156,7 +156,7 @@ rm -rf .svn
 
 # Lede/Lean
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
-svn co https://github.com/coolsnowwolf/luci/trunk/luci-app-samba ./luci-app-samba
+svn co https://github.com/coolsnowwolf/luci/trunk//applications/luci-app-samba ./luci-app-samba
 rm -rf .svn
 rm -rf ./default-settings
 
