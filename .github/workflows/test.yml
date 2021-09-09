@@ -33,19 +33,3 @@ jobs:
         git clone https://github.com/NueXini/NueXini_Packages -b main --single-branch packages
         cd packages
         $GITHUB_WORKSPACE/$shell
-
-    - name: Upload
-      env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        [ -e $README ] && cp -f $README packages
-        cd packages
-        git add .
-        git commit -m "update at $(TZ='Asia/Shanghai' date +%Y-%m-%d)"
-        git push --quiet "https://${{ secrets.TOKEN }}@github.com/NueXini/NueXini_Packages.git" HEAD:main
- 
-    - name: Delete workflow runs
-      uses: GitRML/delete-workflow-runs@main
-      with:
-        retain_days: 1
-        keep_minimum_runs: 0
