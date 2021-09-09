@@ -1,0 +1,51 @@
+name: Test
+
+on:
+  workflow_dispatch:
+
+env:
+  shell: main.sh
+  README: other/AAAAA/README.md
+
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    if: github.event.repository.owner.id == github.event.sender.id
+        
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: Initialization environment
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo -E apt-get -qq update
+        sudo -E apt-get -qq install git subversion git-core wget
+        sudo timedatectl set-timezone "Asia/Shanghai"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        
+    - name: Clone packages
+      run: |
+        chmod +x $shell
+        git clone https://github.com/NueXini/NueXini_Packages -b main --single-branch packages
+        cd packages
+        $GITHUB_WORKSPACE/$shell
+
+    - name: Upload
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        [ -e $README ] && cp -f $README packages
+        cd packages
+        git add .
+        git commit -m "update at $(TZ='Asia/Shanghai' date +%Y-%m-%d)"
+        git push --quiet "https://${{ secrets.TOKEN }}@github.com/NueXini/NueXini_Packages.git" HEAD:main
+ 
+    - name: Delete workflow runs
+      uses: GitRML/delete-workflow-runs@main
+      with:
+        retain_days: 1
+        keep_minimum_runs: 0
