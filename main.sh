@@ -2,8 +2,8 @@
 
 ####################################################################################################
 
-# Adguardhome
-svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ./luci-app-adguardhome
+# BanAD
+#svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ./luci-app-adguardhome
 svn co https://github.com/project-lede/luci-app-godproxy/trunk ./luci-app-godproxy
 svn co https://github.com/small-5/luci-app-adblock-plus/trunk ./luci-app-adblock-plus
 rm -rf .svn
@@ -185,6 +185,7 @@ svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser ./lu
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-control-timewol ./luci-app-control-timewol
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-control-webrestriction ./luci-app-control-webrestriction
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-timecontrol ./luci-app-timecontrol
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server ./luci-app-ipsec-server
 rm -rf .svn
 ####################################################################################################
 
