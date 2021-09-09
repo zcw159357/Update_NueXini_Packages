@@ -60,11 +60,6 @@ svn co https://github.com/jerrykuku/luci-app-ttnode/trunk ./luci-app-ttnode
 rm -rf .svn
 ####################################################################################################
 
-# autotimeset(定时设置)
-svn co https://github.com/sirpdboy/luci-app-autotimeset/trunk ./luci-app-autotimeset
-rm -rf .svn
-####################################################################################################
-
 # CPU睿频设置
 svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-cpulimit ./luci-app-cpulimit
 rm -rf .svn
@@ -80,24 +75,12 @@ rm -rf .svn
 svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon1907
 svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 ./luci-theme-argon1806
 svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon-config
-rm -rf .svn
-####################################################################################################
-
 # Theme-Rosy
 svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy ./luci-theme-rosy1806
-rm -rf .svn
-####################################################################################################
-
 # Theme-infinityfreedom
 svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./luci-theme-infinityfreedom1806
-rm -rf .svn
-####################################################################################################
-
 # Theme-openwrt-2020
 svn co https://github.com/openwrt/luci/trunk/themes/luci-theme-openwrt-2020 ./luci-theme-openwrt-2020
-rm -rf .svn
-####################################################################################################
-
 # Theme-Edge
 svn co https://github.com/kiddin9/luci-theme-edge/trunk ./luci-theme-edge1907
 svn co https://github.com/kiddin9/luci-theme-edge/branches/18.06 ./luci-theme-edge1806
@@ -123,6 +106,8 @@ rm -rf .svn
 
 # Serverchan
 svn co https://github.com/tty228/luci-app-serverchan/trunk ./luci-app-serverchan
+# pushbot
+svn co https://github.com/zzsj0928/luci-app-pushbot/trunk ./luci-app-pushbot
 rm -rf .svn
 ####################################################################################################
 
@@ -159,6 +144,8 @@ rm -rf .svn
 
 # Control-weburl
 svn co https://github.com/gdck/luci-app-control-weburl/trunk ./luci-app-control-weburl
+# autotimeset(定时设置)
+svn co https://github.com/sirpdboy/luci-app-autotimeset/trunk ./luci-app-autotimeset
 rm -rf .svn
 ####################################################################################################
 
