@@ -156,10 +156,9 @@ rm -rf .svn
 
 # Lede/Lean
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
+svn co https://github.com/coolsnowwolf/luci/tree/master/applications/luci-app-samba ./luci-app-samba
 rm -rf .svn
-rm -rf ./autosamba
 rm -rf ./default-settings
-rm -rf ./luci-app-ssrserver-python
 
 sed -i 's#http://www.cryptopp.com/#https://github.com/NueXini/Update_NueXini_Packages/raw/master/other/#g' ./libcryptopp/Makefile
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
