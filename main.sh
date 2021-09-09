@@ -4,15 +4,7 @@
 
 # Adguardhome
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ./luci-app-adguardhome
-rm -rf .svn
-####################################################################################################
-
-# Godproxy
 svn co https://github.com/project-lede/luci-app-godproxy/trunk ./luci-app-godproxy
-rm -rf .svn
-####################################################################################################
-
-# Adblock-plus
 svn co https://github.com/small-5/luci-app-adblock-plus/trunk ./luci-app-adblock-plus
 rm -rf .svn
 ####################################################################################################
@@ -193,30 +185,18 @@ sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
 
 # OpenWrt
 svn co https://github.com/openwrt/luci/trunk/applications/luci-app-banip ./luci-app-banip
-rm -rf .svn
 svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-switch ./luci-app-ledtrig-switch
-rm -rf .svn
 svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-rssi ./luci-app-ledtrig-rssi
-rm -rf .svn
 svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-usbport ./luci-app-ledtrig-usbport
-rm -rf .svn
 svn co https://github.com/openwrt/luci/trunk/applications/luci-app-vnstat2 ./luci-app-vnstat2
 rm -rf .svn
 ####################################################################################################
 
 # Lienol
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-fileassistant ./luci-app-fileassistant
-rm -rf .svn
-
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser ./luci-app-filebrowser
-rm -rf .svn
-
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-control-timewol ./luci-app-control-timewol
-rm -rf .svn
-
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-control-webrestriction ./luci-app-control-webrestriction
-rm -rf .svn
-
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-timecontrol ./luci-app-timecontrol
 rm -rf .svn
 ####################################################################################################
