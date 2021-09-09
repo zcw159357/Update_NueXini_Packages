@@ -32,8 +32,9 @@ jobs:
     - name: Clone packages
       run: |
         chmod +x $shell
-        mkdir -p packages
+        git clone https://github.com/NueXini/NueXini_Packages -b main --single-branch packages
         cd packages
+        rm -rf *
         $GITHUB_WORKSPACE/$shell
 
     - name: Upload packages
