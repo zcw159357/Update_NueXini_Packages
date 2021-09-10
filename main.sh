@@ -158,6 +158,7 @@ rm -rf .svn
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-samba ./luci-app-samba
 svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
+svn co https://github.com/coolsnowwolf/lede/trunk/package/network/services/samba36 ./samba36
 rm -rf .svn
 rm -rf ./default-settings
 
