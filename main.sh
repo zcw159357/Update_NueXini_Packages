@@ -157,6 +157,7 @@ rm -rf .svn
 # Lede/Lean
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/luci/trunk//applications/luci-app-samba ./luci-app-samba
+svn co https://github.com/coolsnowwolf/packages/tree/master/sound/forked-daapd ./forked-daapd
 rm -rf .svn
 rm -rf ./default-settings
 
