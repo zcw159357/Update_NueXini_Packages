@@ -44,7 +44,7 @@ jobs:
         [ -e $README ] && cp -f $README packages
         cd packages
         git add .
-        git commit -m "update at $(TZ='Asia/Shanghai' date +%Y-%m-%d)"
+        git commit -m "❤️update at $(TZ='Asia/Shanghai' date +%Y-%m-%d)🍭"
         git push --quiet "https://${{ secrets.TOKEN }}@github.com/NueXini/NueXini_Packages.git" HEAD:main
  
     - name: Delete workflow runs
