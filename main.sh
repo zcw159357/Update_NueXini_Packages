@@ -2,6 +2,11 @@
 
 ####################################################################################################
 
+# aliyundrive-webdav
+svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt ./
+rm -rf .svn
+####################################################################################################
+
 # BanAD
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ./luci-app-adguardhome
 svn co https://github.com/project-lede/luci-app-godproxy/trunk ./luci-app-godproxy
