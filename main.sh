@@ -187,6 +187,25 @@ svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server ./l
 rm -rf .svn
 ####################################################################################################
 
+# X-WRT
+svn co https://github.com/x-wrt/com.x-wrt/trunk/p910nd-helper ./p910nd-helper
+sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./p910nd-helper/Makefile
+
+svn co https://github.com/x-wrt/com.x-wrt/trunk/luci-app-natcap ./luci-app-natcap
+sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-natcap/Makefile
+
+svn co https://github.com/x-wrt/com.x-wrt/trunk/natcap ./natcap
+sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./natcap/Makefile
+
+svn co https://github.com/x-wrt/com.x-wrt/trunk/luci-app-proxyxwan ./luci-app-proxyxwan
+sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-proxyxwan/Makefile
+
+svn co https://github.com/x-wrt/com.x-wrt/trunk/luci-app-pptpxwan ./luci-app-pptpxwan
+sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-pptpxwan/Makefile
+
+rm -rf .svn
+####################################################################################################
+
 rm -rf ./*/.git
 rm -rf ./*/.svn 
 rm -rf .gitattributes .gitignore
