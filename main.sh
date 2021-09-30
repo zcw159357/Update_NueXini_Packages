@@ -22,7 +22,6 @@ rm -rf .svn
 
 # SSR-Plus
 svn co https://github.com/fw876/helloworld/trunk ./
-sed -i 's#libustream-openssl#libustream-mbedtls#g' ./luci-app-ssr-plus/Makefile
 rm -rf .svn
 ####################################################################################################
 
