@@ -158,6 +158,11 @@ svn co https://github.com/msylgj/luci-app-tencentddns/trunk ./luci-app-tencentdd
 rm -rf .svn
 ####################################################################################################
 
+# Tencentddns
+svn co https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic/trunk ./luci-app-unblockneteasemusic
+rm -rf .svn
+####################################################################################################
+
 # Lede/Lean
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-samba ./luci-app-samba
