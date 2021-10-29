@@ -158,8 +158,13 @@ svn co https://github.com/msylgj/luci-app-tencentddns/trunk ./luci-app-tencentdd
 rm -rf .svn
 ####################################################################################################
 
-# Tencentddns
+# unblockneteasemusic
 svn co https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic/trunk ./luci-app-unblockneteasemusic
+rm -rf .svn
+####################################################################################################
+
+# wrtbwmon
+svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon ./luci-app-wrtbwmon
 rm -rf .svn
 ####################################################################################################
 
