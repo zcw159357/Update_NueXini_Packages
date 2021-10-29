@@ -164,8 +164,8 @@ rm -rf .svn
 ####################################################################################################
 
 # wrtbwmon
-svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon ./luci-app-wrtbwmon
-rm -rf .svn
+# svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon ./luci-app-wrtbwmon
+# rm -rf .svn
 ####################################################################################################
 
 # Lede/Lean
