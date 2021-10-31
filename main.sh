@@ -104,7 +104,7 @@ rm -rf .svn
 ####################################################################################################
 
 # EQOS
-svn co https://github.com/kiddin9/luci-app-eqos/trunk ./luci-app-eqos
+svn co https://github.com/skyformat99/eqos/trunk ./luci-app-eqos
 rm -rf .svn
 ####################################################################################################
 
