@@ -217,6 +217,12 @@ sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-proxyxwan/Makefile
 svn co https://github.com/x-wrt/com.x-wrt/trunk/luci-app-pptpxwan ./luci-app-pptpxwan
 sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-pptpxwan/Makefile
 
+svn co https://github.com/x-wrt/com.x-wrt/trunk/luci-app-pptpxwan ./luci-app-pptpxwan
+sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-pptpxwan/Makefile
+
+svn co https://github.com/x-wrt/com.x-wrt/trunk/lua-ipops ./lua-ipops
+sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./lua-ipops/Makefile
+
 rm -rf .svn
 ####################################################################################################
 
