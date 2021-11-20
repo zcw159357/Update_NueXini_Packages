@@ -14,12 +14,6 @@ svn co https://github.com/small-5/luci-app-adblock-plus/trunk ./luci-app-adblock
 rm -rf .svn
 ####################################################################################################
 
-# PassWall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk ./
-sed -i 's/default y/default n/g' luci-app-passwall/Makefile
-rm -rf .svn
-####################################################################################################
-
 # SSR-Plus
 svn co https://github.com/fw876/helloworld/trunk ./
 rm -rf .svn
@@ -27,6 +21,12 @@ rm -rf .svn
 
 # OpenClash
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash ./luci-app-openclash
+rm -rf .svn
+####################################################################################################
+
+# PassWall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk ./
+sed -i 's/default y/default n/g' luci-app-passwall/Makefile
 rm -rf .svn
 ####################################################################################################
 
