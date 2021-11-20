@@ -16,6 +16,7 @@ rm -rf .svn
 
 # SSR-Plus
 svn co https://github.com/fw876/helloworld/trunk ./
+sed -i 's/default y/default n/g' ./luci-app-ssr-plus/Makefile
 rm -rf .svn
 ####################################################################################################
 
@@ -33,6 +34,7 @@ rm -rf .svn
 # VSSR
 svn co https://github.com/jerrykuku/lua-maxminddb/trunk ./lua-maxminddb
 svn co https://github.com/jerrykuku/luci-app-vssr/trunk ./luci-app-vssr
+sed -i 's/default y/default n/g' ./luci-app-vssr/Makefile
 rm -rf .svn
 ####################################################################################################
 
