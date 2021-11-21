@@ -17,7 +17,7 @@ rm -rf .svn
 # SSR-Plus
 svn co https://github.com/fw876/helloworld/trunk ./
 sed -i 's/default y/default n/g' ./luci-app-ssr-plus/Makefile
-sed -i 's/8dcf5973033d40c9a7b15e571dea3832e7b67976aad9113369e22d43808c603f/5f693c4779c1d6802e509c2c1e5f130017fd6634a0ccd3a0de47be419c068f5e/g' ./naiveproxy/Makefile
+#sed -i 's/8dcf5973033d40c9a7b15e571dea3832e7b67976aad9113369e22d43808c603f/5f693c4779c1d6802e509c2c1e5f130017fd6634a0ccd3a0de47be419c068f5e/g' ./naiveproxy/Makefile
 rm -rf .svn
 ####################################################################################################
 
