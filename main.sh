@@ -4,6 +4,7 @@
 
 # luci-app-store
 svn co https://github.com/linkease/istore/trunk/luci/luci-app-store ./luci-app-store
+svn co https://github.com/linkease/istore-ui/trunk/app-store-ui ./app-store-ui/host
 rm -rf .svn
 ####################################################################################################
 
