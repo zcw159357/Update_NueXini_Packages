@@ -5,6 +5,7 @@
 # luci-app-store
 svn co https://github.com/linkease/istore/trunk/luci/luci-app-store ./luci-app-store
 svn co https://github.com/linkease/istore-ui/trunk/app-store-ui ./app-store-ui/host
+sed -i 's#app-store-ui/dist#app-store-ui/host/dist#g' ./luci-app-store/Makefile
 rm -rf .svn
 ####################################################################################################
 
