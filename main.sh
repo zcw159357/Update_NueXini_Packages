@@ -2,6 +2,11 @@
 
 ####################################################################################################
 
+# luci-app-store
+svn co https://github.com/linkease/istore/trunk/luci/luci-app-store ./luci-app-store
+rm -rf .svn
+####################################################################################################
+
 # aliyundrive-webdav
 svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt ./
 rm -rf .svn
