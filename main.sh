@@ -57,32 +57,8 @@ svn co https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-
 rm -rf .svn
 ####################################################################################################
 
-# udp2raw
-svn co https://github.com/immortalwrt/packages/trunk/net/udp2raw-tunnel ./udp2raw-tunnel
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw ./luci-app-udp2raw
-rm -rf .svn
-####################################################################################################
-
-# ksmbd
-svn co https://github.com/immortalwrt/packages/trunk/net/ksmbd-tools ./ksmbd-tools
-svn co https://github.com/immortalwrt/packages/trunk/kernel/ksmbd ./ksmbd
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-ksmbd ./luci-app-ksmbd
-rm -rf .svn
-####################################################################################################
-
 # ttnode(甜糖星愿自动采集插件)
 svn co https://github.com/jerrykuku/luci-app-ttnode/trunk ./luci-app-ttnode
-rm -rf .svn
-####################################################################################################
-
-# CPU睿频设置
-svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-cpulimit ./luci-app-cpulimit
-rm -rf .svn
-####################################################################################################
-
-# Gost代理
-svn co https://github.com/immortalwrt/packages/trunk/net/gost ./gost
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost ./luci-app-gost
 rm -rf .svn
 ####################################################################################################
 
@@ -195,9 +171,6 @@ sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
 
 # OpenWrt
 svn co https://github.com/openwrt/luci/trunk/applications/luci-app-banip ./luci-app-banip
-svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-switch ./luci-app-ledtrig-switch
-svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-rssi ./luci-app-ledtrig-rssi
-svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ledtrig-usbport ./luci-app-ledtrig-usbport
 svn co https://github.com/openwrt/luci/trunk/applications/luci-app-vnstat2 ./luci-app-vnstat2
 rm -rf .svn
 ####################################################################################################
@@ -208,33 +181,11 @@ svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser ./lu
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-control-timewol ./luci-app-control-timewol
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-control-webrestriction ./luci-app-control-webrestriction
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-timecontrol ./luci-app-timecontrol
-svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-ipsec-server ./luci-app-ipsec-server
 rm -rf .svn
 ####################################################################################################
 
-# X-WRT
-svn co https://github.com/x-wrt/com.x-wrt/trunk/p910nd-helper ./p910nd-helper
-sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./p910nd-helper/Makefile
 
-svn co https://github.com/x-wrt/com.x-wrt/trunk/luci-app-natcap ./luci-app-natcap
-sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-natcap/Makefile
 
-svn co https://github.com/x-wrt/com.x-wrt/trunk/natcap ./natcap
-sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./natcap/Makefile
-
-svn co https://github.com/x-wrt/com.x-wrt/trunk/luci-app-proxyxwan ./luci-app-proxyxwan
-sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-proxyxwan/Makefile
-
-svn co https://github.com/x-wrt/com.x-wrt/trunk/luci-app-pptpxwan ./luci-app-pptpxwan
-sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-pptpxwan/Makefile
-
-svn co https://github.com/x-wrt/com.x-wrt/trunk/luci-app-pptpxwan ./luci-app-pptpxwan
-sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./luci-app-pptpxwan/Makefile
-
-svn co https://github.com/x-wrt/com.x-wrt/trunk/lua-ipops ./lua-ipops
-sed -i 's/CATEGORY:=X/CATEGORY:=LuCI/g' ./lua-ipops/Makefile
-
-rm -rf .svn
 ####################################################################################################
 
 rm -rf ./*/.git
