@@ -154,6 +154,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/network/services/samba
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/ethtool ./ethtool
 rm -rf .svn
 rm -rf ./default-settings
+rm -rf ./autosamba
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
