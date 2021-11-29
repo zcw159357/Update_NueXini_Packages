@@ -52,6 +52,8 @@ rm -rf .svn
 
 # dockerman
 svn co https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-dockerman ./luci-app-dockerman
+svn co https://github.com/lisaac/luci-app-diskman/trunk/applications/luci-app-diskman ./luci-app-diskman
+sed -i 's/default y/default n/g' ./luci-app-diskman/Makefile
 rm -rf .svn
 ####################################################################################################
 
@@ -154,13 +156,13 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/network/services/samba
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/ethtool ./ethtool
 rm -rf ./default-settings
 rm -rf ./autosamba
+rm -rf ./lisaac
 rm -rf ./luci-app-turboacc
 rm -rf ./shortcut-fe
 rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
-sed -i 's/default y/default n/g' ./luci-app-diskman/Makefile
 sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
 ####################################################################################################
 
