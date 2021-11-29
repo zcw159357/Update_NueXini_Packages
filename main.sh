@@ -152,9 +152,11 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/services/samba36 ./samba36
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/ethtool ./ethtool
-rm -rf .svn
 rm -rf ./default-settings
 rm -rf ./autosamba
+rm -rf ./luci-app-turboacc
+rm -rf ./shortcut-fe
+rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
