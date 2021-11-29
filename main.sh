@@ -141,7 +141,6 @@ rm -rf .svn
 
 # Tencentddns
 svn co https://github.com/msylgj/luci-app-tencentddns/trunk ./luci-app-tencentddns
-# sed -i 's/\"tencentcloud\"/\"services\"/g' ./luci-app-tencentddns/luasrc/controller/tencentddns.lua
 rm -rf .svn
 ####################################################################################################
 
