@@ -183,6 +183,8 @@ svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-timecontrol ./lu
 rm -rf .svn
 ####################################################################################################
 
+# Language_Fix
+ln -s ./luci-app-*/po/zh-cn ./luci-app-*/po/zh_Hans
 
 ####################################################################################################
 
