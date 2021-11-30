@@ -15,7 +15,8 @@ rm -rf .svn
 
 # BanAD
 svn co https://github.com/rufengsuixing/luci-app-adguardhome/trunk ./luci-app-adguardhome
-svn co https://github.com/project-lede/luci-app-godproxy/trunk ./luci-app-godproxy
+#svn co https://github.com/project-lede/luci-app-godproxy/trunk ./luci-app-godproxy
+svn co https://github.com/iwrt/luci-app-ikoolproxy/trunk ./luci-app-ikoolproxy
 #https://github.com/godros/luci-app-ikoolproxy
 svn co https://github.com/small-5/luci-app-adblock-plus/trunk ./luci-app-adblock-plus
 rm -rf .svn
@@ -188,7 +189,6 @@ rm -rf .svn
 
 rm -rf ./*/.git
 rm -rf ./*/.svn
-rm -rf ./*/*/.svn
 rm -rf ./.github/*
 rm -rf .gitattributes .gitignore
 rm -rf LICENSE
