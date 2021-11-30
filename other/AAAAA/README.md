@@ -8,4 +8,4 @@ sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.
 ```
 
 # 更新日志
-2021/11/30 luci-app-godproxy 更名为luci-app-ikoolproxy
+【2021/11/30】luci-app-godproxy 更名为 luci-app-ikoolproxy
