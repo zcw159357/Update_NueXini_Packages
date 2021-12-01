@@ -15,9 +15,7 @@ rm -rf .svn
 
 # BanAD
 svn co https://github.com/rufengsuixing/luci-app-adguardhome/trunk ./luci-app-adguardhome
-#svn co https://github.com/project-lede/luci-app-godproxy/trunk ./luci-app-godproxy
 svn co https://github.com/iwrt/luci-app-ikoolproxy/trunk ./luci-app-ikoolproxy
-#https://github.com/godros/luci-app-ikoolproxy
 svn co https://github.com/small-5/luci-app-adblock-plus/trunk ./luci-app-adblock-plus
 rm -rf .svn
 ####################################################################################################
@@ -183,8 +181,7 @@ svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-timecontrol ./lu
 rm -rf .svn
 ####################################################################################################
 
-# Language_Fix
-# ln -s ./luci-app-*/po/zh-cn ./luci-app-*/po/zh_Hans
+
 ####################################################################################################
 
 rm -rf ./*/.git
