@@ -69,8 +69,6 @@ svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon
 svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy ./luci-theme-rosy1806
 # Theme-infinityfreedom
 svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./luci-theme-infinityfreedom1806
-# Theme-openwrt-2020
-svn co https://github.com/openwrt/luci/trunk/themes/luci-theme-openwrt-2020 ./luci-theme-openwrt-2020
 # Theme-Edge
 svn co https://github.com/kiddin9/luci-theme-edge/trunk ./luci-theme-edge1907
 svn co https://github.com/kiddin9/luci-theme-edge/branches/18.06 ./luci-theme-edge1806
@@ -167,12 +165,6 @@ sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
 sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
 ####################################################################################################
 
-# OpenWrt
-svn co https://github.com/openwrt/luci/trunk/applications/luci-app-banip ./luci-app-banip
-svn co https://github.com/openwrt/luci/trunk/applications/luci-app-vnstat2 ./luci-app-vnstat2
-svn co https://github.com/openwrt/packages/trunk/net/vnstat2 ./vnstat2
-rm -rf .svn
-####################################################################################################
 
 # Lienol
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-fileassistant ./luci-app-fileassistant
