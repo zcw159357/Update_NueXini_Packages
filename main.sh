@@ -109,7 +109,7 @@ rm -rf .svn
 # Speedtest
 svn co https://github.com/sirpdboy/netspeedtest/trunk/luci-app-netspeedtest ./luci-app-netspeedtest
 rm -rf ./luci-app-netspeedtest/po/zh_Hans
-ln -s ./luci-app-netspeedtest/po/zh-cn ./luci-app-netspeedtest/po/zh_Hans
+ln -s zh-cn ./luci-app-netspeedtest/po/zh_Hans
 rm -rf .svn
 ####################################################################################################
 
