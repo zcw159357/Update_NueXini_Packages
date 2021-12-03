@@ -4,6 +4,7 @@
 
 # luci-app-cpolar（内网穿透）
 svn co https://github.com/probezy/luci-app-cpolar/trunk ./luci-app-cpolar
+svn co https://github.com/probezy/cpolar-openwrt/trunk/cpolar ./cpolar
 rm -rf .svn
 ####################################################################################################
 
