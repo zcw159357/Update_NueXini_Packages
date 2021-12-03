@@ -2,6 +2,12 @@
 
 ####################################################################################################
 
+# linkease(易有云)
+svn co https://github.com/linkease/nas-packages-luci/trunk/luci ./
+svn co https://github.com/linkease/nas-packages/trunk/network/services ./
+rm -rf .svn
+####################################################################################################
+
 # luci-app-cpolar（内网穿透）
 svn co https://github.com/probezy/luci-app-cpolar/trunk ./luci-app-cpolar
 svn co https://github.com/probezy/cpolar-openwrt/trunk/cpolar ./cpolar
