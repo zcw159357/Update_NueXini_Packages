@@ -78,6 +78,7 @@ rm -rf .svn
 
 # Theme-Argon
 svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon1907
+ln -s \.\./img/bg1.jpg ./luci-theme-argon1907/htdocs/luci-static/argon/background/bg1.jpg
 svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 ./luci-theme-argon1806
 svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon-config
 # Theme-Rosy
