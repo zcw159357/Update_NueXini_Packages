@@ -180,6 +180,8 @@ rm -rf ./r8125
 rm -rf ./r8168
 rm -rf ./luci-app-turboacc
 rm -rf ./shortcut-fe
+rm -rf ./mt
+rm -rf ./mtk-eip93
 rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
