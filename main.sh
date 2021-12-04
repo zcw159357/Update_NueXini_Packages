@@ -168,6 +168,12 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/ethtool 
 rm -rf ./default-settings
 rm -rf ./autosamba
 rm -rf ./lisaac
+rm -rf ./openwrt-fullconenat
+rm -rf ./k3screenctrl
+rm -rf ./k3-brcmfmac4366c-firmware
+rm -rf ./r8152
+rm -rf ./r8125
+rm -rf ./r8168
 rm -rf ./luci-app-turboacc
 rm -rf ./shortcut-fe
 rm -rf .svn
