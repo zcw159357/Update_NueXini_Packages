@@ -170,7 +170,7 @@ svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forke
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/services/samba36 ./samba36
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/ethtool ./ethtool
 rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc ./luci-proto-bonding
-rm -rf ./mt ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender
+rm -rf ./shortcut-fe ./mt ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender
 rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
