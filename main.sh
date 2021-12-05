@@ -169,22 +169,8 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/services/samba36 ./samba36
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/ethtool ./ethtool
-rm -rf ./default-settings
-rm -rf ./autosamba
-rm -rf ./lisaac
-rm -rf ./openwrt-fullconenat
-rm -rf ./k3screenctrl
-rm -rf ./k3-brcmfmac4366c-firmware
-rm -rf ./r8152
-rm -rf ./r8125
-rm -rf ./r8168
-rm -rf ./luci-app-turboacc
-rm -rf ./shortcut-fe
-rm -rf ./luci-proto-bonding
-rm -rf ./mt
-rm -rf ./mtk-eip93
-rm -rf ./ddns-scripts_aliyun
-rm -rf ./ddns-scripts_dnspod
+rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc
+rm -rf ./luci-proto-bonding ./mt ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy
 rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
