@@ -4,6 +4,12 @@
 
 ####################################################################################################
 
+# luci-app-wrtbwmon
+svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon ./wrtbwmon
+svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon ./luci-app-wrtbwmon
+rm -rf .svn
+####################################################################################################
+
 # linkease(易有云)
 svn co https://github.com/linkease/nas-packages-luci/trunk/luci ./
 rm -rf .svn
