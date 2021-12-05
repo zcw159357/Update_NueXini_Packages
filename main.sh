@@ -183,6 +183,8 @@ rm -rf ./shortcut-fe
 rm -rf ./luci-proto-bonding
 rm -rf ./mt
 rm -rf ./mtk-eip93
+rm -rf ./ddns-scripts_aliyun
+rm -rf ./ddns-scripts_dnspod
 rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
