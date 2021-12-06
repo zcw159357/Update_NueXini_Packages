@@ -174,15 +174,15 @@ rm -rf .svn
 ####################################################################################################
 
 # unblockneteasemusic
-svn co https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic/trunk ./luci-app-unblockneteasemusic
-rm -rf .svn
+# svn co https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic/trunk ./luci-app-unblockneteasemusic
+# rm -rf .svn
 ####################################################################################################
 
 # Lede/Lean
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
-rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc ./luci-proto-bonding
-rm -rf ./shortcut-fe ./mt ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender ./srelay ./luci-app-samba4
+rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc ./mt
+rm -rf ./shortcut-fe ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender ./srelay ./luci-app-samba4 ./luci-proto-bonding
 rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
