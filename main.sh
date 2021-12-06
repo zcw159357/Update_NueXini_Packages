@@ -203,5 +203,5 @@ rm -rf .svn
 
 ####################################################################################################
 
-rm -rf .gitattributes .gitignore ./.github ./*/.svn ./*/.git
+rm -rf LICENSE .gitattributes .gitignore ./.github ./*/.svn ./*/.git
 
