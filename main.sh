@@ -188,7 +188,6 @@ rm -rf .svn
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
 sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
-sed -i 's/php7/php8/g' ./luci-app-kodexplorer/Makefile
 ####################################################################################################
 
 
