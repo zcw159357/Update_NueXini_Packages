@@ -87,7 +87,7 @@ svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon
 rm -rf .svn
 svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon-2102
 sed -i 's/luci-theme-argon/luci-theme-argon-2102/g' ./luci-theme-argon-2102/Makefile
-ln -s \.\./img/bg1.jpg ./luci-theme-argon1907/htdocs/luci-static/argon/background/bg1.jpg
+ln -s \.\./img/bg1.jpg ./luci-theme-argon-2102/htdocs/luci-static/argon/background/bg1.jpg
 ####################################################################################################
 
 # Theme-Rosy
