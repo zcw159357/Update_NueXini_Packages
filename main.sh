@@ -85,23 +85,23 @@ rm -rf .svn
 # Theme-Argon
 svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon-config
 rm -rf .svn
-svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon1907
+svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon-2102
 ln -s \.\./img/bg1.jpg ./luci-theme-argon1907/htdocs/luci-static/argon/background/bg1.jpg
 ####################################################################################################
 
 # Theme-Rosy
-svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy ./luci-theme-rosy1806
+svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy ./luci-theme-rosy-1806
 rm -rf .svn
 ####################################################################################################
 
 # Theme-infinityfreedom
-svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./luci-theme-infinityfreedom1806
+svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./luci-theme-infinityfreedom-1806
 rm -rf .svn
 ####################################################################################################
 
 # Theme-Edge
-svn co https://github.com/kiddin9/luci-theme-edge/trunk ./luci-theme-edge1907
-svn co https://github.com/kiddin9/luci-theme-edge/branches/18.06 ./luci-theme-edge1806
+svn co https://github.com/kiddin9/luci-theme-edge/trunk ./luci-theme-edge-1907
+svn co https://github.com/kiddin9/luci-theme-edge/branches/18.06 ./luci-theme-edge-1806
 rm -rf .svn
 ####################################################################################################
 
