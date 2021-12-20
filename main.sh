@@ -142,6 +142,11 @@ ln -s zh-cn ./luci-app-netspeedtest/po/zh_Hans
 rm -rf .svn
 ####################################################################################################
 
+# luci-app-netdata-cn
+svn co https://github.com/sirpdboy/luci-app-netdata/trunk ./luci-app-netdata
+rm -rf .svn
+####################################################################################################
+
 # Nodogsplash（wifi验证）
 svn co https://github.com/tty228/luci-app-nodogsplash/trunk ./luci-app-nodogsplash
 rm -rf .svn
