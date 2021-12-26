@@ -50,7 +50,7 @@ rm -rf .svn
 # OpenClash
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash ./luci-app-openclash
 rm -f ./luci-app-openclash/root/usr/share/openclash/res/sub_ini.list
-echo 'NueXini 规则,NueXini_basic.ini,https://raw.githubusercontent.com/NueXini/Proxy-Rules/master/Clash/NueXini_basic.ini' >> ./luci-app-openclash/root/usr/share/openclash/res/sub_ini.list
+echo 'NueXini 规则,NueXini_basic.ini,https://raw.githubusercontent.com/NueXini/Proxy-Rules/master/Clash/config/NueXini_basic.ini' >> ./luci-app-openclash/root/usr/share/openclash/res/sub_ini.list
 rm -rf .svn
 ####################################################################################################
 
