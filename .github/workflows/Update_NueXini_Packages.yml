@@ -48,7 +48,7 @@ jobs:
         git push --quiet "https://${{ secrets.TOKEN }}@github.com/NueXini/NueXini_Packages.git" HEAD:main
  
     - name: Delete workflow runs
-      uses: Mattraks/delete-workflow-runs@v1.2.1
+      uses: Mattraks/delete-workflow-runs@v1.2.3
       with:
         retain_days: 1
         keep_minimum_runs: 0
