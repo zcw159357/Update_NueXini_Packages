@@ -1,5 +1,5 @@
 
-name: Update packages
+name: Update NueXini Packages
 
 on:
   workflow_dispatch:
@@ -13,7 +13,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
         
     steps:
     - name: Checkout
@@ -23,9 +22,8 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        sudo -E apt-get -qq update
-        sudo -E apt-get -qq install git subversion git-core wget
-        sudo timedatectl set-timezone "Asia/Shanghai"
+        sudo -E apt-get -y update
+        sudo -E apt-get -y install git subversion git-core wget
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
         
