@@ -7,7 +7,7 @@ on:
     - cron:  '0 4,16,23 * * *'
 
 env:
-  shell: main.sh
+  shell: master.sh
   README: other/AAAAA/README.md
 
 jobs:
