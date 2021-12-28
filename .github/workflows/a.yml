@@ -16,14 +16,14 @@ jobs:
         
     steps:
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@v2.4.0
 
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        sudo -E apt-get -y update
-        sudo -E apt-get -y install git subversion git-core wget
+        # sudo -E apt-get -y update
+        # sudo -E apt-get -y install git subversion git-core wget
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
         
