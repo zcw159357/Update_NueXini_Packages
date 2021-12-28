@@ -4,6 +4,12 @@
 
 ####################################################################################################
 
+# mosdns
+svn co https://github.com/QiuSimons/openwrt-mos/trunk/luci-app-mosdns ./luci-app-mosdns
+svn co https://github.com/QiuSimons/openwrt-mos/trunk/mosdns ./mosdns
+rm -rf .svn
+####################################################################################################
+
 # luci-app-wrtbwmon
 svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon ./wrtbwmon
 svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon ./luci-app-wrtbwmon
