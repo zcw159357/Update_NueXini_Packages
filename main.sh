@@ -4,6 +4,11 @@
 
 ####################################################################################################
 
+# luci-app-wifidog
+svn co https://github.com/walkingsky/luci-wifidog/trunk/ ./luci-app-wifidog
+rm -rf .svn
+####################################################################################################
+
 # mosdns
 svn co https://github.com/QiuSimons/openwrt-mos/trunk/luci-app-mosdns ./luci-app-mosdns
 svn co https://github.com/QiuSimons/openwrt-mos/trunk/mosdns ./mosdns
