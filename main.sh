@@ -7,6 +7,7 @@
 # udp2raw
 svn co https://github.com/immortalwrt/packages/trunk/net/udp2raw ./udp2raw
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw ./luci-app-udp2raw
+sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-udp2raw/Makefile
 rm -rf .svn
 ####################################################################################################
 
