@@ -4,8 +4,15 @@
 
 ####################################################################################################
 
+# udp2raw
+svn co https://github.com/immortalwrt/packages/trunk/net/udp2raw ./udp2raw
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw ./luci-app-udp2raw
+rm -rf .svn
+####################################################################################################
+
+
 # luci-app-wifidog
-svn co https://github.com/walkingsky/luci-wifidog/trunk/ ./luci-app-wifidog
+svn co https://github.com/walkingsky/luci-wifidog/trunk ./luci-app-wifidog
 rm -rf .svn
 ####################################################################################################
 
