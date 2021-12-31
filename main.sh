@@ -7,10 +7,10 @@
 # 石像鬼QOS
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/luci-app-qos-gargoyle ./Gargoyle-Qos/luci-app-qos-gargoyle
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/gargoyle-firewall-util ./Gargoyle-Qos/gargoyle-firewall-util
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/libericstools ./Gargoyle-Qos/qos-gargoyle
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/libericstools ./Gargoyle-Qos/libiptbwctl
+svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/qos-gargoyle ./Gargoyle-Qos/qos-gargoyle
+svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/libiptbwctl ./Gargoyle-Qos/libiptbwctl
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/libericstools ./Gargoyle-Qos/libericstools
-rm -rf ./Gargoyle-Qos/.svn
+rm -rf ./Gargoyle-Qos/*/.svn
 ####################################################################################################
 
 # udp2raw
