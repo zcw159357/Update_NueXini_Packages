@@ -10,7 +10,7 @@ svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/libericstools ./Gargoyle-Qos/qos-gargoyle
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/libericstools ./Gargoyle-Qos/libiptbwctl
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06/package/emortal/libericstools ./Gargoyle-Qos/libericstools
-rm -rf .svn
+rm -rf ./Gargoyle-Qos/.svn
 ####################################################################################################
 
 # udp2raw
