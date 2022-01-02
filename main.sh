@@ -205,6 +205,7 @@ svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost ./lu
 sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-udp2raw/Makefile
 sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-xunlei/Makefile
 sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-gost/Makefile
+sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' ./gost/Makefile
 
 rm -rf .svn
 ####################################################################################################
