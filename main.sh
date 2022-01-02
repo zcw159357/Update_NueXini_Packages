@@ -4,24 +4,6 @@
 
 ####################################################################################################
 
-
-
-# 石像鬼QOS
-# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/luci-app-qos-gargoyle ./Gargoyle-Qos/luci-app-qos-gargoyle
-# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/gargoyle-firewall-util ./Gargoyle-Qos/gargoyle-firewall-util
-# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/qos-gargoyle ./Gargoyle-Qos/qos-gargoyle
-# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/libiptbwctl ./Gargoyle-Qos/libiptbwctl
-# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/libericstools ./Gargoyle-Qos/libericstools
-# rm -rf ./Gargoyle-Qos/*/.svn
-####################################################################################################
-
-# udp2raw
-svn co https://github.com/immortalwrt/packages/trunk/net/udp2raw ./udp2raw
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw ./luci-app-udp2raw
-sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-udp2raw/Makefile
-rm -rf .svn
-####################################################################################################
-
 # mosdns
 svn co https://github.com/QiuSimons/openwrt-mos/trunk/luci-app-mosdns ./luci-app-mosdns
 svn co https://github.com/QiuSimons/openwrt-mos/trunk/mosdns ./mosdns
@@ -205,9 +187,26 @@ svn co https://github.com/msylgj/luci-app-tencentddns/trunk ./luci-app-tencentdd
 rm -rf .svn
 ####################################################################################################
 
-# unblockneteasemusic
-# svn co https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic/trunk ./luci-app-unblockneteasemusic
-# rm -rf .svn
+# immortalwrt
+# 石像鬼QOS
+# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/luci-app-qos-gargoyle ./Gargoyle-Qos/luci-app-qos-gargoyle
+# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/gargoyle-firewall-util ./Gargoyle-Qos/gargoyle-firewall-util
+# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/qos-gargoyle ./Gargoyle-Qos/qos-gargoyle
+# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/libiptbwctl ./Gargoyle-Qos/libiptbwctl
+# svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/libericstools ./Gargoyle-Qos/libericstools
+# rm -rf ./Gargoyle-Qos/*/.svn
+
+svn co https://github.com/immortalwrt/packages/trunk/net/udp2raw ./udp2raw
+svn co https://github.com/immortalwrt/packages/trunk/net/gost ./gost
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw ./luci-app-udp2raw
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-xunlei ./luci-app-xunlei
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost ./luci-app-gost
+
+sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-udp2raw/Makefile
+sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-xunlei/Makefile
+sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-gost/Makefile
+
+rm -rf .svn
 ####################################################################################################
 
 # Lede/Lean
