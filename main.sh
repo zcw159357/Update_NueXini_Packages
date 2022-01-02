@@ -61,6 +61,7 @@ rm -rf .svn
 # BanAD
 svn co https://github.com/rufengsuixing/luci-app-adguardhome/trunk ./luci-app-adguardhome
 svn co https://github.com/iwrt/luci-app-ikoolproxy/trunk ./luci-app-ikoolproxy
+rm ./luci-app-ikoolproxy/rulesupdate.log
 svn co https://github.com/small-5/luci-app-adblock-plus/trunk ./luci-app-adblock-plus
 rm -rf .svn
 ####################################################################################################
