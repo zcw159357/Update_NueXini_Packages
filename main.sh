@@ -204,12 +204,16 @@ svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw .
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-xunlei ./luci-app-xunlei
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost ./luci-app-gost
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-cpulimit ./luci-app-cpulimit
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-unblockneteasemusic-go ./luci-app-unblockneteasemusic-go
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-unblockneteasemusic ./luci-app-unblockneteasemusic
 
 
 sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-udp2raw/Makefile
 sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-xunlei/Makefile
 sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-gost/Makefile
 sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-cpulimit/Makefile
+sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-unblockneteasemusic-go/Makefile
+sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-unblockneteasemusic/Makefile
 sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' ./gost/Makefile
 
 rm -rf .svn
