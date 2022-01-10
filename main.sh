@@ -226,10 +226,10 @@ sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-unblockneteas
 sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' ./gost/Makefile
 sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' ./gowebdav/Makefile
 
-ln -s zh_Hans ./luci-app-udp2raw/po/zh-cn
-ln -s zh_Hans ./luci-app-gost/po/zh-cn
-ln -s zh_Hans ./luci-app-gowebdav/po/zh-cn
-ln -s zh_Hans ./luci-app-cpulimit/po/zh-cn
+ln -s \.\./zh_Hans ./luci-app-udp2raw/po/zh-cn
+ln -s \.\./zh_Hanszh_Hans ./luci-app-gost/po/zh-cn
+ln -s \.\./zh_Hanszh_Hans ./luci-app-gowebdav/po/zh-cn
+ln -s \.\./zh_Hanszh_Hans ./luci-app-cpulimit/po/zh-cn
 
 rm -rf .svn
 ####################################################################################################
