@@ -230,7 +230,6 @@ ln -s zh_Hans ./luci-app-udp2raw/po/zh-cn
 ln -s zh_Hans ./luci-app-gost/po/zh-cn
 ln -s zh_Hans ./luci-app-gowebdav/po/zh-cn
 ln -s zh_Hans ./luci-app-cpulimit/po/zh-cn
-ln -s zh_Hans ./luci-app-cpulimit/po/zh-cn
 
 rm -rf .svn
 ####################################################################################################
