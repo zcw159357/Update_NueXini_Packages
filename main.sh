@@ -104,6 +104,11 @@ sed -i 's/luci-theme-argon/luci-theme-argon-2102/g' ./luci-theme-argon-2102/Make
 ln -s \.\./img/bg1.jpg ./luci-theme-argon-2102/htdocs/luci-static/argon/background/bg1.jpg
 ####################################################################################################
 
+# luci-theme-neobird
+svn co https://github.com/thinktip/luci-theme-neobird/trunk ./luci-theme-neobird
+rm -rf .svn
+####################################################################################################
+
 # Theme-Rosy
 svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy ./luci-theme-rosy-1806
 rm -rf .svn
