@@ -222,17 +222,6 @@ svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-cpulimit 
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-unblockneteasemusic-go ./luci-app-unblockneteasemusic-go
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-unblockneteasemusic ./luci-app-unblockneteasemusic
 
-
-sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-udp2raw/Makefile
-sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-xunlei/Makefile
-sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-gost/Makefile
-sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-gowebdav/Makefile
-sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-cpulimit/Makefile
-sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-unblockneteasemusic-go/Makefile
-sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' ./luci-app-unblockneteasemusic/Makefile
-sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' ./gost/Makefile
-sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' ./gowebdav/Makefile
-
 ln -s \.\./zh_Hans ./luci-app-udp2raw/po/zh-cn
 ln -s \.\./zh_Hans ./luci-app-gost/po/zh-cn
 ln -s \.\./zh_Hans ./luci-app-gowebdav/po/zh-cn
@@ -268,6 +257,11 @@ rm -rf .svn
 
 
 ####################################################################################################
+
+find ./ -type f | grep -v .git\* | while read file; do
+	sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' "$file"
+  sed -i sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' "$file"
+done
 
 rm -rf LICENSE .gitattributes .gitignore ./.github ./*/.svn ./*/.git
 
