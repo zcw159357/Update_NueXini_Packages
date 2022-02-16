@@ -213,6 +213,7 @@ rm -rf .svn
 svn co https://github.com/immortalwrt/packages/trunk/net/udp2raw ./udp2raw
 svn co https://github.com/immortalwrt/packages/trunk/net/gost ./gost
 svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav ./gowebdav
+svn co https://github.com/immortalwrt/packages/trunk/net/redsocks2 ./redsocks2
 svn co https://github.com/immortalwrt/packages/trunk/utils/cpulimit ./cpulimit
 svn co https://github.com/immortalwrt/packages/trunk/utils/cpulimit-ng ./cpulimit-ng
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-udp2raw ./luci-app-udp2raw
@@ -247,6 +248,10 @@ svn co https://github.com/coolsnowwolf/packages/trunk/net/verysync ./verysync
 svn co https://github.com/coolsnowwolf/packages/trunk/net/vlmcsd ./vlmcsd
 svn co https://github.com/coolsnowwolf/packages/trunk/net/nps ./nps
 svn co https://github.com/coolsnowwolf/packages/trunk/net/uugamebooster ./uugamebooster
+svn co https://github.com/coolsnowwolf/packages/trunk/net/qtbase ./qtbase
+svn co https://github.com/coolsnowwolf/packages/trunk/net/qttools ./qttools
+svn co https://github.com/coolsnowwolf/packages/trunk/net/rblibtorrent ./rblibtorrent
+svn co https://github.com/coolsnowwolf/packages/trunk/net/wxbase ./wxbase
 svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go ./UnblockNeteaseMusic-Go
 svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic ./UnblockNeteaseMusic
 rm -rf .svn
@@ -255,7 +260,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
 rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc ./mt
 rm -rf ./shortcut-fe ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender ./srelay ./luci-app-samba4
-rm -rf ./luci-app-noddos
+rm -rf ./luci-app-noddos ./luci-app-e2guardian
 rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
