@@ -235,6 +235,7 @@ rm -rf .svn
 svn co https://github.com/coolsnowwolf/luci/trunk/applications ./
 svn co https://github.com/coolsnowwolf/luci/trunk/collections/luci-lib-docker ./luci-lib-docker
 svn co https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-fs ./luci-lib-fs
+rm -rf .svn
 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
