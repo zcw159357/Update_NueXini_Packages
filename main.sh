@@ -238,22 +238,27 @@ svn co https://github.com/coolsnowwolf/luci/trunk/collections/luci-lib-docker ./
 svn co https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-fs ./luci-lib-fs
 rm -rf .svn
 
-svn co https://github.com/coolsnowwolf/packages/trunk/net/amule ./amule
-svn co https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web ./baidupcs-web
-svn co https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder ./dnsforwarder
-svn co https://github.com/coolsnowwolf/packages/trunk/net/qBittorrent-static ./qBittorrent-static
-svn co https://github.com/coolsnowwolf/packages/trunk/net/qBittorrent ./qBittorrent
-svn co https://github.com/coolsnowwolf/packages/trunk/net/samba4 ./samba4
-svn co https://github.com/coolsnowwolf/packages/trunk/net/verysync ./verysync
-svn co https://github.com/coolsnowwolf/packages/trunk/net/vlmcsd ./vlmcsd
-svn co https://github.com/coolsnowwolf/packages/trunk/net/nps ./nps
-svn co https://github.com/coolsnowwolf/packages/trunk/net/uugamebooster ./uugamebooster
-svn co https://github.com/coolsnowwolf/packages/trunk/net/qtbase ./qtbase
-svn co https://github.com/coolsnowwolf/packages/trunk/net/qttools ./qttools
-svn co https://github.com/coolsnowwolf/packages/trunk/net/rblibtorrent ./rblibtorrent
-svn co https://github.com/coolsnowwolf/packages/trunk/net/wxbase ./wxbase
-svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go ./UnblockNeteaseMusic-Go
-svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic ./UnblockNeteaseMusic
+cat $GITHUB_WORKSPACE/list/lede-packages-net.list | while read name
+do
+    if [ $name != ""]; then
+    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name  ./$name
+    fi
+done
+
+cat $GITHUB_WORKSPACE/list/lede-packages-libs.list | while read name
+do
+    if [ $name != ""]; then
+    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name  ./$name
+    fi
+done
+
+cat $GITHUB_WORKSPACE/list/lede-packages-multimedia.list | while read name
+do
+    if [ $name != ""]; then
+    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name  ./$name
+    fi
+done
+
 rm -rf .svn
 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
