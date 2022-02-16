@@ -61,15 +61,18 @@ rm -rf .svn
 ####################################################################################################
 
 # OpenClash
-svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash ./luci-app-openclash
+git clone https://github.com/vernesong/OpenClash -b master --single-branch ./luci-app-openclash
+# svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash ./luci-app-openclash
+# rm -rf .svn
 echo 'NueXini 规则,NueXini_basic.ini,https://raw.githubusercontent.com/NueXini/Proxy-Rules/master/Clash/config/NueXini_basic.ini' > ./luci-app-openclash/root/usr/share/openclash/res/sub_ini.list
-rm -rf .svn
+
 ####################################################################################################
 
 # PassWall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk ./
+git clone https://github.com/xiaorouji/openwrt-passwall -b main --single-branch ./
+# svn co https://github.com/xiaorouji/openwrt-passwall/trunk ./
+# rm -rf .svn
 sed -i 's/default y/default n/g' luci-app-passwall/Makefile
-rm -rf .svn
 ####################################################################################################
 
 # VSSR
@@ -80,8 +83,9 @@ rm -rf .svn
 ####################################################################################################
 
 # Smartdns
-svn co https://github.com/pymumu/luci-app-smartdns/branches/lede ./luci-app-smartdns
-rm -rf .svn
+# svn co https://github.com/pymumu/luci-app-smartdns/branches/lede ./luci-app-smartdns
+# rm -rf .svn
+git clone https://github.com/pymumu/luci-app-smartdns -b lede --single-branch ./luci-app-smartdns
 ####################################################################################################
 
 # dockerman
@@ -259,8 +263,8 @@ rm -rf .svn
 ####################################################################################################
 
 find -type f|grep -i "Makefile" | while read file; do
-	sed -i 's#\.\.\/\.\./luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' "$file"
-  	sed -i 's#\.\.\/\.\./lang#$(TOPDIR)/feeds/packages/lang#g' "$file"
+	sed -i 's#\.\./\.\./luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' "$file"
+  	sed -i 's#\.\./\.\./lang#$(TOPDIR)/feeds/packages/lang#g' "$file"
 done
 
 rm -rf LICENSE .gitattributes .gitignore ./.github ./*/.svn ./*/.git
