@@ -246,6 +246,7 @@ svn co https://github.com/coolsnowwolf/packages/trunk/net/samba4 ./samba4
 svn co https://github.com/coolsnowwolf/packages/trunk/net/verysync ./verysync
 svn co https://github.com/coolsnowwolf/packages/trunk/net/vlmcsd ./vlmcsd
 svn co https://github.com/coolsnowwolf/packages/trunk/net/nps ./nps
+svn co https://github.com/coolsnowwolf/packages/trunk/net/uugamebooster ./uugamebooster
 svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go ./UnblockNeteaseMusic-Go
 svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic ./UnblockNeteaseMusic
 rm -rf .svn
