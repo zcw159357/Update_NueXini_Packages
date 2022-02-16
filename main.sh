@@ -240,7 +240,7 @@ rm -rf .svn
 cat $GITHUB_WORKSPACE/list/lede-packages-net.list | while read name
 do
     if [ nx"$name" != nx ]; then
-    	echo 'NueXini-APP-$name'
+    	echo 'NueXini-APP-'$name
     	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name ./$name
     fi
 done
@@ -248,7 +248,7 @@ done
 cat $GITHUB_WORKSPACE/list/lede-packages-libs.list | while read name
 do
     if [ nx"$name" != nx ]; then
-    	echo 'NueXini-APP-$name'
+    	echo 'NueXini-APP-'$name
     	svn co https://github.com/coolsnowwolf/packages/trunk/libs/$name ./$name
     fi
 done
@@ -256,7 +256,7 @@ done
 cat $GITHUB_WORKSPACE/list/lede-packages-multimedia.list | while read name
 do
     if [ nx"$name" != nx ]; then
-    	echo 'NueXini-APP-$name'
+    	echo 'NueXini-APP-'$name
     	svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/$name ./$name
     fi
 done
