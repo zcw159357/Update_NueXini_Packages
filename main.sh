@@ -258,7 +258,7 @@ rm -rf .svn
 
 ####################################################################################################
 
-find ./ -type f -inname makefile | while read file; do
+find -type f|grep -i "Makefile" | while read file; do
 	sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' "$file"
   	sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' "$file"
 done
