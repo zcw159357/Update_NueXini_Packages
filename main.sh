@@ -237,10 +237,24 @@ svn co https://github.com/coolsnowwolf/luci/trunk/collections/luci-lib-docker ./
 svn co https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-fs ./luci-lib-fs
 rm -rf .svn
 
+svn co https://github.com/coolsnowwolf/packages/trunk/net/amule ./amule
+svn co https://github.com/coolsnowwolf/packages/trunk/net/baidupcs-web ./baidupcs-web
+svn co https://github.com/coolsnowwolf/packages/trunk/net/dnsforwarder ./dnsforwarder
+svn co https://github.com/coolsnowwolf/packages/trunk/net/qBittorrent-static ./qBittorrent-static
+svn co https://github.com/coolsnowwolf/packages/trunk/net/qBittorrent ./qBittorrent
+svn co https://github.com/coolsnowwolf/packages/trunk/net/samba4 ./samba4
+svn co https://github.com/coolsnowwolf/packages/trunk/net/verysync ./verysync
+svn co https://github.com/coolsnowwolf/packages/trunk/net/vlmcsd ./vlmcsd
+svn co https://github.com/coolsnowwolf/packages/trunk/net/nps ./nps
+svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic-Go ./UnblockNeteaseMusic-Go
+svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/UnblockNeteaseMusic ./UnblockNeteaseMusic
+rm -rf .svn
+
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
 rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc ./mt
 rm -rf ./shortcut-fe ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender ./srelay ./luci-app-samba4
+rm -rf ./luci-app-noddos
 rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
