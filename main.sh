@@ -260,7 +260,7 @@ rm -rf .svn
 
 find ./ -type f | grep -v .git\* | while read file; do
 	sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#g' "$file"
-  sed -i sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' "$file"
+  	sed -i 's#../../#$(TOPDIR)/feeds/packages/#g' "$file"
 done
 
 rm -rf LICENSE .gitattributes .gitignore ./.github ./*/.svn ./*/.git
