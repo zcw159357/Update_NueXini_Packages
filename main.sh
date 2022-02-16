@@ -249,14 +249,14 @@ done
 cat $GITHUB_WORKSPACE/list/lede-packages-libs.list | while read name
 do
     if [ "$name" != ""]; then
-    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name ./$name
+    	svn co https://github.com/coolsnowwolf/packages/trunk/libs/$name ./$name
     fi
 done
 
 cat $GITHUB_WORKSPACE/list/lede-packages-multimedia.list | while read name
 do
     if [ "$name" != ""]; then
-    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name ./$name
+    	svn co https://github.com/coolsnowwolf/packages/trunk/multimedia/$name ./$name
     fi
 done
 
