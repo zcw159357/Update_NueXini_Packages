@@ -61,17 +61,14 @@ rm -rf .svn
 ####################################################################################################
 
 # OpenClash
-git clone https://github.com/vernesong/OpenClash -b master --single-branch ./luci-app-openclash
-# svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash ./luci-app-openclash
-# rm -rf .svn
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash ./luci-app-openclash
+rm -rf .svn
 echo 'NueXini 规则,NueXini_basic.ini,https://raw.githubusercontent.com/NueXini/Proxy-Rules/master/Clash/config/NueXini_basic.ini' > ./luci-app-openclash/root/usr/share/openclash/res/sub_ini.list
-
 ####################################################################################################
 
 # PassWall
-git clone https://github.com/xiaorouji/openwrt-passwall -b main --single-branch ./
-# svn co https://github.com/xiaorouji/openwrt-passwall/trunk ./
-# rm -rf .svn
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk ./
+rm -rf .svn
 sed -i 's/default y/default n/g' luci-app-passwall/Makefile
 ####################################################################################################
 
