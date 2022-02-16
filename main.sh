@@ -97,9 +97,11 @@ rm -rf .svn
 ####################################################################################################
 
 # Theme-Argon
-svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon-config
-rm -rf .svn
-svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon-2102
+# svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon-config
+# rm -rf .svn
+# svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon-2102
+git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06 --single-branch ./luci-theme-argon-1806
+git clone https://github.com/jerrykuku/luci-theme-argon -b master --single-branch ./luci-theme-argon-2102
 sed -i 's/luci-theme-argon/luci-theme-argon-2102/g' ./luci-theme-argon-2102/Makefile
 ln -s \.\./img/bg1.jpg ./luci-theme-argon-2102/htdocs/luci-static/argon/background/bg1.jpg
 ####################################################################################################
@@ -240,14 +242,17 @@ rm -rf .svn
 ####################################################################################################
 
 # Lede/Lean
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
-svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
-rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc ./mt
-rm -rf ./shortcut-fe ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender ./srelay ./luci-app-samba4 ./luci-proto-bonding
-rm -rf .svn
+# svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
+# svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
+# rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc ./mt
+# rm -rf ./shortcut-fe ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender ./srelay ./luci-app-samba4 ./luci-proto-bonding
+# rm -rf .svn
+
+svn co https://github.com/coolsnowwolf/luci/trunk/applications ./
+svn co https://github.com/coolsnowwolf/luci/trunk/collections/luci-lib-docker ./luci-lib-docker
+svn co https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-fs ./luci-lib-fs
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
-sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
 sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
 ####################################################################################################
 
