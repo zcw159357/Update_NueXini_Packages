@@ -241,21 +241,22 @@ rm -rf .svn
 cat $GITHUB_WORKSPACE/list/lede-packages-net.list | while read name
 do
     if [ $name != ""]; then
-    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name  ./$name
+    	echo $name
+    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name ./$name
     fi
 done
 
 cat $GITHUB_WORKSPACE/list/lede-packages-libs.list | while read name
 do
     if [ $name != ""]; then
-    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name  ./$name
+    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name ./$name
     fi
 done
 
 cat $GITHUB_WORKSPACE/list/lede-packages-multimedia.list | while read name
 do
     if [ $name != ""]; then
-    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name  ./$name
+    	svn co https://github.com/coolsnowwolf/packages/trunk/net/$name ./$name
     fi
 done
 
@@ -263,8 +264,9 @@ rm -rf .svn
 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
+
 rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc ./mt
-rm -rf ./shortcut-fe ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender ./srelay ./luci-app-samba4
+rm -rf ./shortcut-fe ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender ./srelay ./luci-app-samba4 ./wxbase
 rm -rf ./luci-app-noddos ./luci-app-e2guardian
 rm -rf .svn
 
