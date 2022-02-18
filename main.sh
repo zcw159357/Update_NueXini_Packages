@@ -4,9 +4,6 @@
 
 ####################################################################################################
 
-# luci-app-socatg
-git clone https://github.com/big-tooth/luci-app-socatg -b main --single-branch --depth=1 ./luci-app-socatg
-####################################################################################################
 
 # luci-app-nezha 哪吒监控
 svn co https://github.com/Erope/openwrt_nezha/trunk/luci-app-nezha ./luci-app-nezha
@@ -270,9 +267,13 @@ rm -rf .svn
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean ./
 svn co https://github.com/coolsnowwolf/packages/trunk/sound/forked-daapd ./forked-daapd
 
-rm -rf ./default-settings ./autosamba ./lisaac ./openwrt-fullconenat ./k3screenctrl ./k3-brcmfmac4366c-firmware ./r8152 ./r8125 ./r8168 ./luci-app-turboacc ./mt
-rm -rf ./shortcut-fe ./mtk-eip93 ./ddns-scripts_aliyun ./ddns-scripts_dnspod ./csstidy ./dsmboot ./gmediarender ./srelay ./luci-app-samba4
-rm -rf ./luci-app-noddos ./luci-app-e2guardian ./luci-app-samba
+cat $GITHUB_WORKSPACE/list/trash.list | while read trash
+do
+    if [ nx"$trash" != nx ]; then
+    	rm -rf $trash
+    fi
+done
+
 rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
