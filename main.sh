@@ -5,7 +5,7 @@
 ####################################################################################################
 
 # luci-app-socatg
-git clone https://github.com/big-tooth/luci-app-socatg -b main --single-branch ./luci-app-socatg
+git clone https://github.com/big-tooth/luci-app-socatg -b main --single-branch --depth=1 ./luci-app-socatg
 ####################################################################################################
 
 # luci-app-nezha 哪吒监控
@@ -86,7 +86,7 @@ rm -rf .svn
 # Smartdns
 # svn co https://github.com/pymumu/luci-app-smartdns/branches/lede ./luci-app-smartdns
 # rm -rf .svn
-git clone https://github.com/pymumu/luci-app-smartdns -b lede --single-branch ./luci-app-smartdns
+git clone https://github.com/pymumu/luci-app-smartdns -b lede --single-branch --depth=1 ./luci-app-smartdns
 ####################################################################################################
 
 # dockerman
@@ -105,8 +105,8 @@ rm -rf .svn
 # svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon-config
 # rm -rf .svn
 # svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon-2102
-git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06 --single-branch ./luci-theme-argon-1806
-git clone https://github.com/jerrykuku/luci-theme-argon -b master --single-branch ./luci-theme-argon-2102
+git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06 --single-branch --depth=1 ./luci-theme-argon-1806
+git clone https://github.com/jerrykuku/luci-theme-argon -b master --single-branch --depth=1 ./luci-theme-argon-2102
 sed -i 's/luci-theme-argon/luci-theme-argon-2102/g' ./luci-theme-argon-2102/Makefile
 ln -s \.\./img/bg1.jpg ./luci-theme-argon-2102/htdocs/luci-static/argon/background/bg1.jpg
 ####################################################################################################
