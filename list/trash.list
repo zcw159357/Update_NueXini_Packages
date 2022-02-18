@@ -16,6 +16,8 @@ csstidy
 dsmboot
 gmediarender
 srelay
+luci-app-samba
+luci-app-turboacc
 luci-app-acme
 luci-app-adblock
 luci-app-advanced-reboot
