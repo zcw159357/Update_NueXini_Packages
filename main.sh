@@ -4,6 +4,10 @@
 
 ####################################################################################################
 
+# luci-app-socatg
+git clone https://github.com/big-tooth/luci-app-socatg -b main --single-branch ./luci-app-socatg
+####################################################################################################
+
 # luci-app-nezha 哪吒监控
 svn co https://github.com/Erope/openwrt_nezha/trunk/luci-app-nezha ./luci-app-nezha
 svn co https://github.com/Erope/openwrt_nezha/trunk/openwrt-nezha ./openwrt-nezha
@@ -273,6 +277,7 @@ rm -rf .svn
 
 sed -i 's#http://www.cryptopp.com/#https://www.cryptopp.com/#g' ./libcryptopp/Makefile
 sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
+sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
 ####################################################################################################
 
 
