@@ -16,8 +16,12 @@ csstidy
 dsmboot
 gmediarender
 srelay
+luci-app-asterisk
+luci-app-e2guardian
 luci-app-samba
 luci-app-turboacc
+luci-app-noddos
+luci-app-nodogsplash
 luci-app-acme
 luci-app-adblock
 luci-app-advanced-reboot
