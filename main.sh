@@ -99,6 +99,7 @@ rm -rf .svn
 
 # Theme-Argon
 # svn co https://github.com/jerrykuku/luci-app-argon-config/trunk ./luci-app-argon-config
+git clone https://github.com/jerrykuku/luci-app-argon-config -b master --single-branch --depth=1./luci-app-argon-config
 # rm -rf .svn
 # svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon-2102
 git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06 --single-branch --depth=1 ./luci-theme-argon-1806
