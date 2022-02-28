@@ -276,7 +276,7 @@ done
 
 rm -rf .svn
 
-cp -rf $GITHUB_WORKSPACE/other/package/libcryptopp ./
+# cp -rf $GITHUB_WORKSPACE/other/package/libcryptopp ./
 sed -i 's/default y/default n/g' ./luci-app-rclone/Makefile
 sed -i 's#wpad-openssl#wpad-basic-wolfssl#g' ./luci-app-easymesh/Makefile
 ####################################################################################################
