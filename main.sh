@@ -4,6 +4,12 @@
 
 ####################################################################################################
 
+# https://github.com/4IceG
+git clone https://github.com/4IceG/luci-app-sms-tool --depth=1 ./luci-app-sms-tool
+git clone https://github.com/4IceG/luci-app-modemband --depth=1 ./luci-app-modemband
+git clone https://github.com/4IceG/luci-app-3ginfo-lite --depth=1 ./luci-app-3ginfo-lite
+####################################################################################################
+
 # luci-app-v2raya
 git clone https://github.com/zxlhhyccc/luci-app-v2raya -b main --single-branch --depth=1 ./luci-app-v2raya
 ####################################################################################################
