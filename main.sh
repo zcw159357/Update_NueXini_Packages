@@ -78,7 +78,7 @@ echo 'NueXini 规则,NueXini_basic.ini,https://raw.githubusercontent.com/NueXini
 
 # PassWall
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk ./
-svn co https://gitee.com/NueXini/NueXini_Packages/trunk/luci-app-passwall ./luci-app-passwall
+svn co https://github.com/NueXini/NueXini_Packages/branches/c20172fbe56010e2e06165d74296500ce00009e6/luci-app-passwall ./luci-app-passwall
 rm -rf .svn
 sed -i 's/default y/default n/g' luci-app-passwall/Makefile
 ####################################################################################################
